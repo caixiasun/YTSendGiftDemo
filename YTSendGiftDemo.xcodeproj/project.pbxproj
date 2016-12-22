@@ -15,6 +15,14 @@
 		00F6C9681E0A850F00E49FD5 /* YTSendGiftDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6C9671E0A850F00E49FD5 /* YTSendGiftDemoTests.m */; };
 		00F6C9731E0A850F00E49FD5 /* YTSendGiftDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6C9721E0A850F00E49FD5 /* YTSendGiftDemoUITests.m */; };
 		00F6C9861E0A8A8300E49FD5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F6C9851E0A8A8300E49FD5 /* Launch Screen.storyboard */; };
+		00F6C98F1E0B6BF300E49FD5 /* UIView+YTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6C98E1E0B6BF300E49FD5 /* UIView+YTFrame.m */; };
+		00F6C9921E0B6C8600E49FD5 /* YTGiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6C9911E0B6C8600E49FD5 /* YTGiftView.m */; };
+		00F6C9951E0B6CBE00E49FD5 /* YTGiftData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6C9941E0B6CBE00E49FD5 /* YTGiftData.m */; };
+		00F6C9981E0B6D7100E49FD5 /* YTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6C9971E0B6D7100E49FD5 /* YTAnimation.m */; };
+		00F6C99B1E0B6D8B00E49FD5 /* YTAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6C99A1E0B6D8B00E49FD5 /* YTAnimationManager.m */; };
+		00F6C99E1E0B6FE900E49FD5 /* YTCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6C99D1E0B6FE900E49FD5 /* YTCacheData.m */; };
+		00F6C9A21E0B84A300E49FD5 /* YTGitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6C9A01E0B84A300E49FD5 /* YTGitCell.m */; };
+		00F6C9A31E0B84A300E49FD5 /* YTGitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F6C9A11E0B84A300E49FD5 /* YTGitCell.xib */; };
 		6FFCA67822796E8E27743719 /* libPods-YTSendGiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2FA2B415754503081222E4 /* libPods-YTSendGiftDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +61,23 @@
 		00F6C9741E0A850F00E49FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F6C9801E0A853B00E49FD5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		00F6C9851E0A8A8300E49FD5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		00F6C98B1E0B6BA700E49FD5 /* YTDLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDLog.h; sourceTree = "<group>"; };
+		00F6C98C1E0B6BBE00E49FD5 /* YTCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTCore.h; sourceTree = "<group>"; };
+		00F6C98D1E0B6BF300E49FD5 /* UIView+YTFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YTFrame.h"; sourceTree = "<group>"; };
+		00F6C98E1E0B6BF300E49FD5 /* UIView+YTFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YTFrame.m"; sourceTree = "<group>"; };
+		00F6C9901E0B6C8600E49FD5 /* YTGiftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTGiftView.h; sourceTree = "<group>"; };
+		00F6C9911E0B6C8600E49FD5 /* YTGiftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTGiftView.m; sourceTree = "<group>"; };
+		00F6C9931E0B6CBE00E49FD5 /* YTGiftData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTGiftData.h; sourceTree = "<group>"; };
+		00F6C9941E0B6CBE00E49FD5 /* YTGiftData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTGiftData.m; sourceTree = "<group>"; };
+		00F6C9961E0B6D7100E49FD5 /* YTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTAnimation.h; sourceTree = "<group>"; };
+		00F6C9971E0B6D7100E49FD5 /* YTAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTAnimation.m; sourceTree = "<group>"; };
+		00F6C9991E0B6D8B00E49FD5 /* YTAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTAnimationManager.h; sourceTree = "<group>"; };
+		00F6C99A1E0B6D8B00E49FD5 /* YTAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTAnimationManager.m; sourceTree = "<group>"; };
+		00F6C99C1E0B6FE900E49FD5 /* YTCacheData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTCacheData.h; sourceTree = "<group>"; };
+		00F6C99D1E0B6FE900E49FD5 /* YTCacheData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTCacheData.m; sourceTree = "<group>"; };
+		00F6C99F1E0B84A300E49FD5 /* YTGitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTGitCell.h; sourceTree = "<group>"; };
+		00F6C9A01E0B84A300E49FD5 /* YTGitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTGitCell.m; sourceTree = "<group>"; };
+		00F6C9A11E0B84A300E49FD5 /* YTGitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTGitCell.xib; sourceTree = "<group>"; };
 		6BBC946CE5CFFED912CB9F25 /* Pods-YTSendGiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTSendGiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTSendGiftDemo/Pods-YTSendGiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DD2FA2B415754503081222E4 /* libPods-YTSendGiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YTSendGiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4278AFA5FA94E97687F4CB3 /* Pods-YTSendGiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTSendGiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YTSendGiftDemo/Pods-YTSendGiftDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +188,8 @@
 		00F6C9881E0A8C7200E49FD5 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				00F6C98D1E0B6BF300E49FD5 /* UIView+YTFrame.h */,
+				00F6C98E1E0B6BF300E49FD5 /* UIView+YTFrame.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -170,6 +197,8 @@
 		00F6C9891E0A8C7200E49FD5 /* header */ = {
 			isa = PBXGroup;
 			children = (
+				00F6C98B1E0B6BA700E49FD5 /* YTDLog.h */,
+				00F6C98C1E0B6BBE00E49FD5 /* YTCore.h */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -177,6 +206,19 @@
 		00F6C98A1E0A8C7200E49FD5 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				00F6C9901E0B6C8600E49FD5 /* YTGiftView.h */,
+				00F6C9911E0B6C8600E49FD5 /* YTGiftView.m */,
+				00F6C9931E0B6CBE00E49FD5 /* YTGiftData.h */,
+				00F6C9941E0B6CBE00E49FD5 /* YTGiftData.m */,
+				00F6C9961E0B6D7100E49FD5 /* YTAnimation.h */,
+				00F6C9971E0B6D7100E49FD5 /* YTAnimation.m */,
+				00F6C9991E0B6D8B00E49FD5 /* YTAnimationManager.h */,
+				00F6C99A1E0B6D8B00E49FD5 /* YTAnimationManager.m */,
+				00F6C99C1E0B6FE900E49FD5 /* YTCacheData.h */,
+				00F6C99D1E0B6FE900E49FD5 /* YTCacheData.m */,
+				00F6C99F1E0B84A300E49FD5 /* YTGitCell.h */,
+				00F6C9A01E0B84A300E49FD5 /* YTGitCell.m */,
+				00F6C9A11E0B84A300E49FD5 /* YTGitCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -313,6 +355,7 @@
 				00F6C9861E0A8A8300E49FD5 /* Launch Screen.storyboard in Resources */,
 				00F6C95A1E0A850F00E49FD5 /* Assets.xcassets in Resources */,
 				00F6C9581E0A850F00E49FD5 /* Main.storyboard in Resources */,
+				00F6C9A31E0B84A300E49FD5 /* YTGitCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,9 +428,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F6C9951E0B6CBE00E49FD5 /* YTGiftData.m in Sources */,
+				00F6C99E1E0B6FE900E49FD5 /* YTCacheData.m in Sources */,
 				00F6C9551E0A850F00E49FD5 /* ViewController.m in Sources */,
 				00F6C9521E0A850F00E49FD5 /* AppDelegate.m in Sources */,
+				00F6C9921E0B6C8600E49FD5 /* YTGiftView.m in Sources */,
 				00F6C94F1E0A850F00E49FD5 /* main.m in Sources */,
+				00F6C98F1E0B6BF300E49FD5 /* UIView+YTFrame.m in Sources */,
+				00F6C9A21E0B84A300E49FD5 /* YTGitCell.m in Sources */,
+				00F6C9981E0B6D7100E49FD5 /* YTAnimation.m in Sources */,
+				00F6C99B1E0B6D8B00E49FD5 /* YTAnimationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

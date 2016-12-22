@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,19 +24,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drink" translatesAutoresizingMaskIntoConstraints="NO" id="n12-Ke-qKO">
-                                <rect key="frame" x="179.5" y="99.5" width="16" height="16"/>
+                                <rect key="frame" x="179.5" y="119.5" width="16" height="16"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Qf6-UC-npo" appends="YES" id="cxS-9u-2M4"/>
                                 </connections>
                             </imageView>
                             <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helmet" translatesAutoresizingMaskIntoConstraints="NO" id="Ot7-Sn-qzU">
-                                <rect key="frame" x="153.5" y="99.5" width="16" height="16"/>
+                                <rect key="frame" x="153.5" y="119.5" width="16" height="16"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="JKZ-Z1-FLo" appends="YES" id="B8o-Ig-ivy"/>
                                 </connections>
                             </imageView>
                             <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="S6z-YX-6Lf">
-                                <rect key="frame" x="205.5" y="99.5" width="16" height="16"/>
+                                <rect key="frame" x="205.5" y="119.5" width="16" height="16"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="0Dm-UH-wOM" appends="YES" id="4C9-aR-sx7"/>
                                 </connections>
@@ -45,16 +47,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tx8-RU-ytw" userLabel="View1">
+                                <rect key="frame" x="0.0" y="267" width="375" height="133"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5U8-iA-C6t">
+                                <rect key="frame" x="26" y="410" width="323" height="247"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8a6-kR-GV7"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9wS-MY-xQO"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="n12-Ke-qKO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Y7-Qs-fZq"/>
                             <constraint firstItem="Ot7-Sn-qzU" firstAttribute="trailing" secondItem="n12-Ke-qKO" secondAttribute="leading" constant="-10" id="4fr-PH-BDn"/>
+                            <constraint firstItem="Tx8-RU-ytw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Zj-3o-n06"/>
+                            <constraint firstItem="5U8-iA-C6t" firstAttribute="centerX" secondItem="Tx8-RU-ytw" secondAttribute="centerX" id="F3e-Zn-8YU"/>
                             <constraint firstItem="c5E-Yp-itE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KLS-t1-Nge"/>
-                            <constraint firstItem="n12-Ke-qKO" firstAttribute="top" secondItem="c5E-Yp-itE" secondAttribute="bottom" constant="10" id="ZH8-iT-cSZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5U8-iA-C6t" secondAttribute="bottom" constant="10" id="KRO-Zr-ka6"/>
+                            <constraint firstItem="n12-Ke-qKO" firstAttribute="top" secondItem="c5E-Yp-itE" secondAttribute="bottom" constant="30" id="ZH8-iT-cSZ"/>
+                            <constraint firstItem="5U8-iA-C6t" firstAttribute="top" secondItem="Tx8-RU-ytw" secondAttribute="bottom" constant="10" id="dGN-gR-YV4"/>
                             <constraint firstItem="S6z-YX-6Lf" firstAttribute="leading" secondItem="n12-Ke-qKO" secondAttribute="trailing" constant="10" id="fsl-Ku-VzZ"/>
+                            <constraint firstItem="Tx8-RU-ytw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="juz-RB-qYH"/>
+                            <constraint firstItem="5U8-iA-C6t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="kVa-cK-87S"/>
+                            <constraint firstItem="Tx8-RU-ytw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2:1" id="mf7-kO-VKn"/>
+                            <constraint firstItem="Tx8-RU-ytw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sJq-Sh-9it"/>
                             <constraint firstItem="c5E-Yp-itE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="sSR-Me-vNU"/>
                             <constraint firstItem="S6z-YX-6Lf" firstAttribute="centerY" secondItem="n12-Ke-qKO" secondAttribute="centerY" id="w08-UE-Sh5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5U8-iA-C6t" secondAttribute="trailing" constant="10" id="w8I-di-Y5L"/>
                             <constraint firstItem="Ot7-Sn-qzU" firstAttribute="centerY" secondItem="n12-Ke-qKO" secondAttribute="centerY" id="xAC-YP-ovg"/>
                         </constraints>
                     </view>
@@ -62,7 +84,9 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="drinkImageView" destination="n12-Ke-qKO" id="St2-tU-LLz"/>
+                        <outlet property="giftView" destination="Tx8-RU-ytw" id="75C-rX-fKV"/>
                         <outlet property="helmetImageView" destination="Ot7-Sn-qzU" id="ziF-2l-Djk"/>
+                        <outlet property="tableView" destination="5U8-iA-C6t" id="GEZ-Lm-z0X"/>
                         <outlet property="watchImageView" destination="S6z-YX-6Lf" id="Fh2-x1-qTP"/>
                     </connections>
                 </viewController>

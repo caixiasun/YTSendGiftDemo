@@ -2,7 +2,7 @@
 //  YTSendGiftDemoTests.m
 //  YTSendGiftDemoTests
 //
-//  Created by caixiasun on 2016/12/21.
+//  Created by yatou on 2016/12/21.
 //  Copyright © 2016年 yatou. All rights reserved.
 //
 
