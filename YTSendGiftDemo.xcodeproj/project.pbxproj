@@ -87,6 +87,7 @@
 		00F6C9411E0A850F00E49FD5 = {
 			isa = PBXGroup;
 			children = (
+				00F6C9871E0A8C2C00E49FD5 /* YTCore */,
 				00F6C94C1E0A850F00E49FD5 /* YTSendGiftDemo */,
 				00F6C9661E0A850F00E49FD5 /* YTSendGiftDemoTests */,
 				00F6C9711E0A850F00E49FD5 /* YTSendGiftDemoUITests */,
@@ -147,6 +148,37 @@
 				00F6C9741E0A850F00E49FD5 /* Info.plist */,
 			);
 			path = YTSendGiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		00F6C9871E0A8C2C00E49FD5 /* YTCore */ = {
+			isa = PBXGroup;
+			children = (
+				00F6C9881E0A8C7200E49FD5 /* category */,
+				00F6C9891E0A8C7200E49FD5 /* header */,
+				00F6C98A1E0A8C7200E49FD5 /* view */,
+			);
+			path = YTCore;
+			sourceTree = "<group>";
+		};
+		00F6C9881E0A8C7200E49FD5 /* category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		00F6C9891E0A8C7200E49FD5 /* header */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		00F6C98A1E0A8C7200E49FD5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		BC8EDFF6EC9DBC2D1D0B5DEF /* Pods */ = {
@@ -587,6 +619,7 @@
 				00F6C9791E0A850F00E49FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00F6C97A1E0A850F00E49FD5 /* Build configuration list for PBXNativeTarget "YTSendGiftDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +628,7 @@
 				00F6C97C1E0A850F00E49FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00F6C97D1E0A850F00E49FD5 /* Build configuration list for PBXNativeTarget "YTSendGiftDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +637,7 @@
 				00F6C97F1E0A850F00E49FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

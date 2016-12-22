@@ -41,7 +41,7 @@
 }
 
 - (void)setBorder {
-    CGColorRef cgColor = [UIColor whiteColor].CGColor;
+    CGColorRef cgColor = [UIColor greenColor].CGColor;
     self.drinkImageView.layer.borderColor = cgColor;
     self.drinkImageView.layer.borderWidth = 0.5;
     self.drinkImageView.layer.cornerRadius = 10;
