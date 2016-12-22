@@ -22,7 +22,7 @@
 /// 操作缓存池
 @property (nonatomic,strong) NSCache *operationCache;
 /// 维护用户礼物信息
-@property (nonatomic,strong) NSCache *userGigtInfos;
+@property (nonatomic,strong) NSCache *userGiftInfos;
 
 @property (nonatomic, assign) int isInQueue1;
 
@@ -47,8 +47,8 @@
     //拼接key存入NSCache
     NSString *key = [NSString stringWithFormat:@"%@%@",data.senderName,data.giftName];
     //在有用户礼物信息时
-    if ([self.userGigtInfos objectForKey:key]) {
-        YTCacheData *cacheGiftData = [self.userGigtInfos objectForKey:key];
+    if ([self.userGiftInfos objectForKey:key]) {
+        YTCacheData *cacheGiftData = [self.userGiftInfos objectForKey:key];
         double timeInterval = [[NSDate date]  timeIntervalSinceDate:cacheGiftData.date];
         if (timeInterval > 15) {//超过15s，连击失效
             cacheGiftData.count = 1;
@@ -58,7 +58,7 @@
             cacheGiftData.count += 1;
         }
         cacheGiftData.date = [NSDate date];
-        [self.userGigtInfos setObject:cacheGiftData forKey:key];
+        [self.userGiftInfos setObject:cacheGiftData forKey:key];
         
         // 如果有操作缓存，则直接累加，不需要重新创建op
         if ([self.operationCache objectForKey:key] != nil) {
@@ -76,10 +76,10 @@
                 finishedBlock(result);
             }
             //存储结束时的count
-            YTCacheData *cacheGiftData = [weak_self.userGigtInfos objectForKey:key];
+            YTCacheData *cacheGiftData = [weak_self.userGiftInfos objectForKey:key];
             cacheGiftData.oldCount = finishCount;
             if (cacheGiftData != nil) {
-                [weak_self.userGigtInfos setObject:cacheGiftData forKey:key];
+                [weak_self.userGiftInfos setObject:cacheGiftData forKey:key];
             }
         }];
         
@@ -111,15 +111,15 @@
             if (finishedBlock) {
                 finishedBlock(result);
             }
-            YTCacheData *cacheGiftData = [weak_self.userGigtInfos objectForKey:key];
+            YTCacheData *cacheGiftData = [weak_self.userGiftInfos objectForKey:key];
             cacheGiftData.oldCount = finishCount;
             if (cacheGiftData != nil) {
-                [weak_self.userGigtInfos setObject:cacheGiftData forKey:key];
+                [weak_self.userGiftInfos setObject:cacheGiftData forKey:key];
             }
         }];
         // 将礼物信息数量存起来
         YTCacheData *cacheData = [YTCacheData createDataWithDate:[NSDate date] Count:1 GiftName:data.giftName];
-        [self.userGigtInfos setObject:cacheData forKey:key];
+        [self.userGiftInfos setObject:cacheData forKey:key];
         
         // 将操作添加到缓存池
         [self.operationCache setObject:animObj forKey:key];
@@ -170,11 +170,11 @@
     return _operationCache;
 }
 
-- (NSCache *)userGigtInfos {
-    if (_userGigtInfos == nil) {
-        _userGigtInfos = [[NSCache alloc] init];
+- (NSCache *)userGiftInfos {
+    if (_userGiftInfos == nil) {
+        _userGiftInfos = [[NSCache alloc] init];
     }
-    return _userGigtInfos;
+    return _userGiftInfos;
 }
 
 - (void)cancelAllOperations{
@@ -183,8 +183,8 @@
     [self.queue2 cancelAllOperations];
     self.queue2 = nil;
     
-    [self.userGigtInfos removeAllObjects];
-    self.userGigtInfos = nil;
+    [self.userGiftInfos removeAllObjects];
+    self.userGiftInfos = nil;
     [self.operationCache removeAllObjects];
     self.operationCache = nil;
 }
